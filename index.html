@@ -37,7 +37,7 @@
             padding: 50px 30px;
         }
 
-        /* ABOUT SECTION (NEW) */
+        /* ABOUT SECTION */
         .about {
             margin-bottom: 40px;
         }
@@ -91,4 +91,75 @@
             transition: all 0.25s ease;
         }
 
-        li:hover .proj
+        li:hover .project-details {
+            max-height: 200px;
+            opacity: 1;
+            transform: translateY(0);
+            margin-top: 10px;
+        }
+
+        .project-details p {
+            margin: 0 0 10px 0;
+            opacity: 0.85;
+        }
+
+        .project-details a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            opacity: 0.55;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+    <h1>Alex’s Projects</h1>
+</header>
+
+<main>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <p>
+            Hey, I’m Alex. I build projects in Python and I’m learning
+            software development by actually making things.
+        </p>
+
+        <a class="github-btn" href="https://github.com/Alex-code-14" target="_blank">
+            🔗 View my GitHub
+        </a>
+    </section>
+
+    <!-- PROJECTS -->
+    <ul>
+        <li>
+            <div class="project-title">♠️ Blackjack (Python)</div>
+
+            <div class="project-details">
+                <p>
+                    Text-based Blackjack game built in Python with
+                    player choices, dealer logic, and ace handling.
+                </p>
+
+                <a href="BLACK%20JACK.zip">⬇ Download project</a>
+            </div>
+        </li>
+    </ul>
+
+</main>
+
+<footer>
+    Built with HTML & CSS • Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
