@@ -1,15 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Alex | Projects</title>
+    <meta charset="UTF-8">
+    <title>Alex | Projects</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 30px;
+            border-bottom: 1px solid #1f2933;
+        }
+
+        header img {
+            width: 48px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #111827;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            opacity: 0.85;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>🚀 Alex’s Projects</h1>
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+    <h1>Alex’s Projects</h1>
+</header>
 
-<p>♠️ Text-based Blackjack game written in Python.</p>
+<main>
+    <div class="projects">
+        <div class="card">
+            <h2>♠️ Blackjack (Python)</h2>
+            <p>
+                A text-based Blackjack game built in Python using
+                player input, dealer logic, and ace handling.
+            </p>
+            <a href="BLACK%20JACK.zip">⬇ Download Project</a>
+        </div>
+    </div>
+</main>
 
-<a href="BLACK%20JACK.zip">Download Blackjack Project</a>
+<footer>
+    Built with HTML & CSS • Hosted on GitHub Pages
+</footer>
 
 </body>
 </html>
