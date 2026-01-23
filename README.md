@@ -1,14 +1,6 @@
-# ♠️ Blackjack (Python)
+## Educational Project Showcase
 
-A simple text-based Blackjack game built in Python.
+This repository contains personal programming projects
+for learning purposes. The website is a static showcase
+and does not host games or executable content.
 
-## How to run
-Make sure Python is installed, then run:
-
-python script.py
-
-## Features
-- Player hit or stand
-- Dealer logic
-- Ace value handling
-- Console-based gameplay
