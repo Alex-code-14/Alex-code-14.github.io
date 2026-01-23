@@ -26,14 +26,19 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
             padding: 50px 30px;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 34px;
             margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 26px;
         }
 
         p {
@@ -42,13 +47,36 @@
             opacity: 0.95;
         }
 
-        .box {
-            margin-top: 30px;
-            padding: 20px;
-            border-radius: 12px;
+        .teacher-box {
+            margin-top: 25px;
+            padding: 24px;
             background: #111827;
-            font-size: 15px;
-            opacity: 0.85;
+            border-radius: 14px;
+            font-size: 16px;
+        }
+
+        .teacher-box strong {
+            color: #38bdf8;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 12px;
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 14px;
+            opacity: 0.55;
         }
     </style>
 </head>
@@ -60,25 +88,28 @@
 </header>
 
 <main>
+
     <h1>About This Website</h1>
 
     <p>
-        This website is a personal <strong>project showcase</strong> created
-        for educational and learning purposes. It displays programming
-        projects and source code written by me.
+        This website is a personal <strong>educational project showcase</strong>
+        created by a student to display programming work. It contains
+        descriptions and source code for learning-focused projects.
     </p>
 
     <p>
-        This site does <strong>not</strong> host online games, executable
-        software, or interactive gameplay. All projects are shared as
-        source code for learning and review.
+        This site is static and informational only. It does <strong>not</strong>
+        host online games, interactive gameplay, or executable software.
     </p>
 
-    <div class="box">
-        Educational portfolio • Static website • Open-source projects<br>
-        Hosted using GitHub Pages
-    </div>
-</main>
+    <h2>Teacher / Administrator Information</h2>
 
-</body>
-</html>
+    <div class="teacher-box">
+        <p>
+            <strong>Purpose:</strong> This site exists solely to present
+            programming projects for educational review and learning.
+        </p>
+
+        <p>
+            <strong>Content:</strong> Projects are written in Python and shared
+            as source code. Any downloads are plain text files intended to be
